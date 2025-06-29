@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitTrackr</title>
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.10.13/build/spline-viewer.js"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div id="logo">FitTrackr</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#nutrition">Nutrition</a></li>
+        <li><a href="#coach">Coach</a></li>
+        <li><a href="#progress">Progress</a></li>
+        <li><a href="#community">Community</a></li>
+      </ul>
+    </nav>
+
+    <section id="home" class="section">
+      <button id="htana"></button>
+      <h1>FITNESS</h1>
+      <spline-viewer
+        id="svg"
+        url="https://prod.spline.design/r9Cs9-Yor6dR74Mo/scene.splinecode"
+      ></spline-viewer>
+    </section>
+
+    <section id="dashboard" class="section">
+      <h2 class="dashboard-heading">Daily Dashboard</h2>
+
+      <div class="dashboard-wrapper">
+        <div class="dashboard-video">
+          <video width="100%" autoplay muted loop>
+            <source
+              src="https://cdn.pixabay.com/video/2022/10/16/135156-761273546_tiny.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="dashboard-stats">
+          <div class="dashboard-card">
+            <h3>Steps</h3>
+            <p contenteditable="true">7,500 / 10,000</p>
+          </div>
+          <div class="dashboard-card">
+            <h3>Calories</h3>
+            <p contenteditable="true">520 / 800 kcal</p>
+          </div>
+          <div class="dashboard-card">
+            <h3>Water</h3>
+            <p contenteditable="true">1.5 / 3 L</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nutrition" class="section">
+      <h2 class="nutrition-heading">Nutrition Plan</h2>
+
+      <div class="nutrition-container">
+        <div class="nutrition-card">
+          <img
+            src="https://i.pinimg.com/736x/42/30/09/4230092455c033e69c2e49d2ac1efbd6.jpg"
+            alt="Breakfast"
+            class="meal-img"
+          />
+          <h3>🥣 Breakfast</h3>
+          <p contenteditable="true">Oats + Banana + Almonds</p>
+        </div>
+
+        <div class="nutrition-card">
+          <img
+            src="https://i.pinimg.com/736x/25/0f/16/250f161e76b0473a8e33d319626cc229.jpg"
+            alt="Mid-Morning Snack"
+            class="meal-img"
+          />
+          <h3>🥤 Mid-Morning Snack</h3>
+          <p contenteditable="true">Coconut Water + Handful Nuts</p>
+        </div>
+
+        <div class="nutrition-card">
+          <img
+            src="https://i.pinimg.com/736x/5e/f4/e0/5ef4e01bdf8d4886bbff253619e862ee.jpg"
+            alt="Lunch"
+            class="meal-img"
+          />
+          <h3>🍛 Lunch</h3>
+          <p contenteditable="true">Brown Rice + Dal + Mix Veggies</p>
+        </div>
+
+        <div class="nutrition-card">
+          <img
+            src="https://i.pinimg.com/736x/e1/9c/cc/e19cccc28c50483a71501d343e1a61dd.jpg"
+            alt="Pre Workout"
+            class="meal-img"
+          />
+          <h3>🍌 Pre-Workout</h3>
+          <p contenteditable="true">Banana + Black Coffee</p>
+        </div>
+
+        <div class="nutrition-card">
+          <img
+            src="https://i.pinimg.com/736x/57/b7/d8/57b7d8624905b320786c8d24f7ce7143.jpg"
+            alt="Post Workout"
+            class="meal-img"
+          />
+          <h3>🥛 Post-Workout</h3>
+          <p contenteditable="true">Protein Shake + Dates</p>
+        </div>
+
+        <div class="nutrition-card">
+          <img
+            src="https://i.pinimg.com/736x/98/5f/b0/985fb0aaa44c0b460b543961c14d63c2.jpg"
+            alt="Evening Snack"
+            class="meal-img"
+          />
+          <h3>🥪 Evening Snack</h3>
+          <p contenteditable="true">Sprouts Chaat + Green Tea</p>
+        </div>
+
+        <div class="nutrition-card">
+          <img
+            src="https://i.pinimg.com/736x/1b/35/f8/1b35f816d62714a98a800d7b35ada3a5.jpg"
+            alt="Dinner"
+            class="meal-img"
+          />
+          <h3>🥗 Dinner</h3>
+          <p contenteditable="true">Grilled Paneer + Salad</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="coach" class="section coach-section">
+      <h2 class="section-heading">Meet Your Coaches</h2>
+      <div class="coach-container">
+        <div class="coach-card">
+          <img
+            src="https://i.pinimg.com/736x/bb/6d/49/bb6d4957e47ff8e312aef9f4cb4cd1fe.jpg"
+            alt="Coach 1"
+          />
+          <h3>Ritika Sharma</h3>
+          <p>Yoga & Nutrition Coach - 8 Years Experience</p>
+        </div>
+        <div class="coach-card">
+          <img
+            src="https://i.pinimg.com/736x/88/d1/1a/88d11a3428462b2e143d8c4a28af7a60.jpg"
+            alt="Coach 2"
+          />
+          <h3>Aditya Mehra</h3>
+          <p>Strength Coach - Muscle & Endurance Specialist</p>
+        </div>
+        <div class="coach-card">
+          <img
+            src="https://i.pinimg.com/736x/d3/b3/0d/d3b30d26362020a5e6b21e3332e0867b.jpg"
+            alt="Coach 3"
+          />
+          <h3>Sneha Iyer</h3>
+          <p>Fat Loss Expert - Diet & Lifestyle Consultant</p>
+        </div>
+      </div>
+    </section>
+
+     <section id="progress" class="section">
+      <h2 class="section-heading">Progress & Check-in</h2>
+
+      <div class="progress-container">
+        <div class="progress-card mood-checkin">
+          <h3>How are you feeling today?</h3>
+          <div class="emoji-selector">
+            <span>😄</span>
+            <span>😊</span>
+            <span>😐</span>
+            <span>😔</span>
+            <span>😢</span>
+          </div>
+        </div>
+
+        <div class="progress-card">
+          <h3>Current Progress</h3>
+          <ul>
+            <li>Weight: <strong>68 kg</strong></li>
+            <li>Body Fat: <strong>18%</strong></li>
+            <li>BMI: <strong>22.5</strong></li>
+            <li>Workout Streak: <strong>12 days</strong></li>
+          </ul>
+        </div>
+
+        <div class="progress-card">
+          <h3>This Week's Plan</h3>
+          <ul>
+            <li>🧘 Yoga (Mon/Wed/Fri)</li>
+            <li>🏃‍♂️ Running (Tue/Thu)</li>
+            <li>🏋️ Gym (Sat/Sun)</li>
+          </ul>
+        </div>
+
+        <div class="progress-card">
+          <h3>Weekly Goals</h3>
+          <ul>
+            <li>✅ 5 Workouts</li>
+            <li>✅ 2.5L Water Daily</li>
+            <li>✅ 7+ Hours Sleep</li>
+            <li>✅ Track Mood Daily</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section id="community" class="section community-section">
+      <h2 class="section-heading">Join Our Fit Community 💬</h2>
+      <p class="community-intro">
+        Connect with thousands of fitness enthusiasts. Share your progress, get
+        motivated, and stay on track together!
+      </p>
+
+      <div class="community-wrapper">
+        <div class="community-card">
+          <img
+            src="https://i.pinimg.com/736x/46/0d/67/460d674990c3e72cb3ec41bd16364c0b.jpg"
+            alt="Group Chat"
+          />
+          <h3>Live Chat</h3>
+          <p>
+            Join our live Discord channels for real-time conversations with
+            coaches and peers.
+          </p>
+          <button>Join Discord</button>
+        </div>
+
+        <div class="community-card">
+          <img
+            src="https://i.pinimg.com/736x/54/ec/bf/54ecbfaf5ecb4a49b52693898a53edc4.jpg"
+            alt="Forum"
+          />
+          <h3>Discussion Forum</h3>
+          <p>
+            Post questions, get advice, and explore topics across all areas of
+            health & wellness.
+          </p>
+          <button>Go to Forum</button>
+        </div>
+
+        <div class="community-card">
+          <img
+            src="https://i.pinimg.com/736x/23/9f/ec/239fec8ef9541fb1b1c84901d0ec7d77.jpg"
+            alt="Events"
+          />
+          <h3>Community Events</h3>
+          <p>
+            Participate in fitness challenges, Q&A sessions, and live webinars
+            hosted weekly.
+          </p>
+          <button>View Events</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>FitTrackr<span>.</span></h2>
+          <p>Track your fitness, fuel your goals!</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="footer-links">
+          <h3>Team Contact</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/aryan.singh_36?igsh=MTFoNXV3YjZucndsNQ==">Aryan</a></li>
+            <li><a href="https://www.instagram.com/vishvjeet4467/profilecard/?igsh=ZzlldWw5dWp0Nmpi">Vishvjeet</a></li>
+            <li><a href="https://www.instagram.com/iam_gokull_?utm_source=qr&igsh=Mm0waDJlcHc2a2h4">Gokul</a></li>
+            <li><a href="https://www.instagram.com/piyush_mathur._/profilecard/?igsh=MXU4c3JmaXd4cWZ4dQ==">Piyush</a></li>
+            <li><a href="https://www.instagram.com/nishant_sharma_n_s?igsh=NjNveHgzdmI4aWhj">Nishant</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-resources">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: as4518161@gmail.com</p>
+          <p>Phone: +91 9572613145</p>
+          <p>Location: Bhopal, India</p>
+
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 FitTrackr. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
